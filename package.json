@@ -1,0 +1,53 @@
+{
+  "name": "@immugio/object-utils",
+  "version": "0.0.0",
+  "description": "Set of utilities for working with javascript objects",
+  "author": "Jan Mikeska <janmikeska@gmail.com>",
+  "license": "ISC",
+  "keywords": [
+    "javascript",
+    "object",
+    "utils"
+  ],
+  "bugs": {
+    "url": "https://github.com/Immugio/object-utils/issues"
+  },
+  "homepage": "https://github.com/Immugio/object-utils#readme",
+  "sideEffects": false,
+  "source": "src/index.ts",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "types/index.d.ts",
+  "auto-changelog": {
+    "commitLimit": false,
+    "template": "keepachangelog"
+  },
+  "scripts": {
+    "test": "npx jest",
+    "dev": "tsc -watch",
+    "build:esm": "tsc",
+    "build:cjs": "tsc -p tsconfig-cjs.json",
+    "clean": "rimraf types cjs esm",
+    "build": "npm run clean && npm run build:esm && npm run build:cjs",
+    "preversion": "npm run clean && npm run build && npm run test",
+    "version": "auto-changelog -p && git add CHANGELOG.md",
+    "postversion": "git push && git push --tags"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.4",
+    "@types/webpack-env": "^1.18.1",
+    "auto-changelog": "^2.4.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "rimraf": "^5.0.1",
+    "ts-jest": "^29.1.1",
+    "typedoc": "^0.25.1",
+    "typedoc-plugin-markdown": "^3.16.0",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Immugio/object-utils.git"
+  }
+}

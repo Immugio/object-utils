@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "./esm",
+    "declaration": true,
+    "declarationDir": "./types",
+    "importHelpers": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "jsxFactory": "dom",
+    "lib": [ "esnext", "dom" ]
+  },
+  "compileOnSave": true,
+  "include": [ "src/**/*" ],
+  "exclude": ["src/**/*.test.ts*", "src/**/*.spec.ts*"]
+}
