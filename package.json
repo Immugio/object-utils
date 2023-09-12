@@ -1,6 +1,6 @@
 {
   "name": "@immugio/object-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Set of utilities for working with javascript objects",
   "author": "Jan Mikeska <janmikeska@gmail.com>",
   "license": "ISC",
