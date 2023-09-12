@@ -5,3 +5,4 @@ export { hasFlag, excludesFlags } from "./flags";
 export { groupBy } from "./groupBy";
 export { range } from "./range";
 export { isBetween } from "./isBetween";
+export { Cache } from "./Cache";
