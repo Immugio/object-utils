@@ -1,4 +1,4 @@
-type ItemsGroup<TItem, TKey> = { key: TKey, items: TItem[] };
+export type ItemsGroup<TItem, TKey> = { key: TKey, items: TItem[] };
 
 export function groupBy<TItem, TKey>(arr: TItem[], getKey: (item: TItem) => TKey): ItemsGroup<TItem, TKey>[] {
     const result: ItemsGroup<TItem, TKey>[] = [];
